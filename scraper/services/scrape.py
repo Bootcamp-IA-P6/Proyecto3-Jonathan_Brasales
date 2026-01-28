@@ -4,17 +4,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Para Chrome
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.firefox.service import Service
+from selenium.webdriver.firefox.options import Options
 import time
 
 def scrape_website():
     # Configurar Selenium
     options = Options()
-    options.add_argument('--headless=new')  # Ejecutar en modo headless (queremos ver que pasa)
+    options.add_argument('--headless')  # Ejecutar en modo headless (queremos ver que pasa)
     options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920,1080")
+    #options.add_argument("--window-size=1920,1080")
     options.add_argument('--no-sandbox')  # Requerido para algunos servidores
     #options.add_argument('--start-maximized')
     options.add_argument('--disable-dev-shm-usage')  # Para evitar errores de memoria
@@ -25,8 +24,10 @@ def scrape_website():
 
     # Para Chrome
     # Selenium Manager se encargará de descargar y gestionar el WebDriver
-    service = Service()  # No es necesario especificar el ejecutable
-    driver = webdriver.Chrome(service=service, options=options)
+    service = Service("/usr/local/bin/geckodriver")
+
+    #service = Service()  # No es necesario especificar el ejecutable
+    driver = webdriver.Firefox(service=service, options=options)
 
     # Navegar al sitio web
     url = "https://es.wikipedia.org/wiki/Wikipedia:Portada"

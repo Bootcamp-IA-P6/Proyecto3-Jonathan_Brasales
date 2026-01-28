@@ -2,8 +2,7 @@ from django.db import models
 
 # Create your models here.
 class ScrapedData(models.Model):
-
-
+    id = models.BigAutoField(primary_key=True)
     title = models.CharField(max_length=200, blank=True, null=True)
     text = models.TextField()
     img_url = models.URLField(blank=True, null=True)
