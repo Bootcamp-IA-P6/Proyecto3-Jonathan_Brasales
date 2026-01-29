@@ -193,7 +193,7 @@ SELECT * FROM scraper_scrapeddata; # Consultar datos
 ### Ejecutar Tests
 
 ```bash
-docker exec -it webscraper-server-1 python manage.py test
+docker exec -it webscraper-server-1 python manage.py test scraper --verbosity 2
 ```
 
 ### Cobertura de Tests
