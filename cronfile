@@ -1,0 +1,1 @@
+*/5 * * * * echo "Cron ejecutado $(date)" >> /var/log/cron.log 2>&1; /usr/local/bin/python /app/manage.py scraper_wiki >> /var/log/cron.log 2>&1
