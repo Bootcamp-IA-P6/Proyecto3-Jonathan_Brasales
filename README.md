@@ -298,20 +298,14 @@ Este proyecto se desarrolla con fines educativos como parte de un reto técnico 
 ## 👤 Autor
 
 **Desarrollador:** Jonathan Brasales
+
 **Proyecto:** Reto técnico de Web Scraping
+
 **Contacto:** 
 - 💼 LinkedIn: [jbrasales](https://www.linkedin.com/in/jbrasales/)
-- 🐙 GitHub: [@tu-usuario](https://github.com/tu-usuario)
+- 🐙 GitHub: [@JonnyBP](https://github.com/JonnyBP)
 
 **Tablero del Proyecto:** [GitHub Projects](https://github.com/orgs/Bootcamp-IA-P6/projects/12)
-
----
-
-## 🙏 Agradecimientos
-
-- **Factoría F5** por los recursos y materiales de referencia
-- Comunidad de **Django** y **Selenium** por la documentación
-- **XYZ Corp** por plantear el reto técnico
 
 ---
 
